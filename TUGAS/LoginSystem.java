@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LoginSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        final String LAST_THREE_NIM = "158"; // Sesuaikan dengan 3 digit NIM terakhir Anda
+        final String LAST_THREE_NIM = "158";
         final String ADMIN_USERNAME = "Admin" + LAST_THREE_NIM;
         final String ADMIN_PASSWORD = "password" + LAST_THREE_NIM;
         final String VALID_NAME = "Yusuf";
@@ -24,6 +24,7 @@ public class LoginSystem {
             String username = scanner.nextLine();
             System.out.print("Masukkan Password: ");
             String password = scanner.nextLine();
+
 
             if (username.equals(ADMIN_USERNAME) && password.equals(ADMIN_PASSWORD)) {
                 System.out.println("Login Admin berhasil!");//equals cek input
