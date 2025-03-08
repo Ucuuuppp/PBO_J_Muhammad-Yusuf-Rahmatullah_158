@@ -44,9 +44,9 @@ class RekeningBank {
 public class Main2 {
     public static void main(String[] args) {
         // Membuat objek rekening1 dengan data milik "kalian"
-        RekeningBank rekening1 = new RekeningBank("NIM Kalian", "Nama kalian", 1000000);
+        RekeningBank rekening1 = new RekeningBank("202110370311158", "yusuf", 1000000);
         // Membuat objek rekening2 dengan data milik "teman kalian"
-        RekeningBank rekening2 = new RekeningBank("NIM Teman kalian", "Nama teman kalian", 500000);
+        RekeningBank rekening2 = new RekeningBank("202110370311437", "alif", 500000);
 
         // Menampilkan informasi awal kedua rekening
         System.out.println("=== Informasi Rekening 1 ===");
