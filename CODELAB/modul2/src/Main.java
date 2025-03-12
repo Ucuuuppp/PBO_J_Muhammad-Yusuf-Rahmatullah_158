@@ -4,7 +4,7 @@ class Hewan {
     String jenis;
     String suara;
 
-    // Konstruktor untuk inisialisasi atribut
+    // Konstruktor untuk inisialisasi atribut, this=memanggil att kls
     public Hewan(String nama, String jenis, String suara) {
         this.nama = nama;
         this.jenis = jenis;
