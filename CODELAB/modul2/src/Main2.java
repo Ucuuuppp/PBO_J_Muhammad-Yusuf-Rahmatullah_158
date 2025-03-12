@@ -14,26 +14,26 @@ class RekeningBank {
 
     // Method untuk menampilkan informasi rekening
     public void tampilkanInfo() {
-        System.out.println("Nomor Rekening : " + nomorRekening);
-        System.out.println("Nama Pemilik   : " + namaPemilik);
-        System.out.println("Saldo          : " + saldo);
+        System.out.println("Nomor Rekening : " + this.nomorRekening);
+        System.out.println("Nama Pemilik   : " + this.namaPemilik);
+        System.out.println("Saldo          : " + this.saldo);
     }
 
     // Method untuk menyetor uang ke dalam rekening
     public void setorUang(double jumlah) {
-        saldo += jumlah;
+        this.saldo += jumlah;
         System.out.println("Transaksi Setor Uang");
         System.out.println("Jumlah Setoran : " + jumlah);
-        System.out.println("Saldo Baru     : " + saldo);
+        System.out.println("Saldo Baru     : " + this.saldo);
     }
 
     // Method untuk menarik uang dari rekening jika saldo mencukupi
     public void tarikUang(double jumlah) {
-        if(saldo >= jumlah) {
-            saldo -= jumlah;
+        if(this.saldo >= jumlah) {
+            this.saldo -= jumlah;
             System.out.println("Transaksi Tarik Uang");
             System.out.println("Jumlah Penarikan : " + jumlah);
-            System.out.println("Saldo Baru       : " + saldo);
+            System.out.println("Saldo Baru       : " + this.saldo);
         } else {
             System.out.println("Saldo tidak mencukupi untuk melakukan penarikan sebesar " + jumlah);
         }
