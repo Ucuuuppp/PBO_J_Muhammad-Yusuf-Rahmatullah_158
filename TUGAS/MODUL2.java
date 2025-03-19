@@ -36,7 +36,7 @@ public class MODUL2 {
         System.out.println("2. Mahasiswa");
         System.out.print("Masukkan pilihan: ");
         int pilihan = scanner.nextInt();
-        scanner.nextLine(); // Mengonsumsi newline
+        scanner.nextLine();//Mengonsumsi newline
 
         if (pilihan == 1) {
             // Login sebagai Admin
