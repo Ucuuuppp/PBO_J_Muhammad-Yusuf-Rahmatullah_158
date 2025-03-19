@@ -16,7 +16,7 @@ public class MODUL1 {
         System.out.println("2. Mahasiswa");
         System.out.print("Masukkan pilihan: ");
         int pilihan = scanner.nextInt();//ambil input 
-        scanner.nextLine();
+        scanner.nextLine();//untuk membaca 1 baris
 
         if (pilihan == 1) {
             // Login sebagai Admin
