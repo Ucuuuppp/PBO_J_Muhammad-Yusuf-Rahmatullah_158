@@ -2,7 +2,7 @@ package TUGAS;
 
 import java.util.Scanner;
 
-public class LoginSystem {
+public class MODUL1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         final String LAST_THREE_NIM = "158";
