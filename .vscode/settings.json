@@ -3,6 +3,7 @@
         ".",
         "CODELAB\\modul 1\\src",
         "CODELAB\\modul2\\src",
+        "CODELAB\\modul3\\src"
     ],
     "java.project.referencedLibraries": [],
     "java.debug.settings.onBuildFailureProceed": true
