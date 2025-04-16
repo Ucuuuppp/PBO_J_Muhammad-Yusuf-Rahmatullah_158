@@ -8,7 +8,7 @@ public class MODUL3 {
         Scanner scanner = new Scanner(System.in);
         
         // Inisialisasi objek Admin dan Mahasiswa dengan data contoh
-        Admin admin = new Admin("Administrator", "0000", "Admin158", "password158");
+        Admin admin = new Admin("Yusufffff", "158", "Admin158", "password158");
         Mahasiswa mahasiswa = new Mahasiswa("yusuf", "202110370311158");
 
         // Tampilan pilihan login
