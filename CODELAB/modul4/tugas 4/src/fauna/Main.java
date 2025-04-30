@@ -3,7 +3,7 @@ package fauna;
 public class Main {
     public static void main(String[] args) {
         // Polymorphism: referensi tipe Hewan menunjuk objek Panda
-        Hewan hewan1 = new Panda("Panda Merah");
+        Hewan hewan1 = new Panda("Panda");
 
         // Meskipun tipe referensinya Hewan, method yang dijalankan adalah milik Panda (runtime polymorphism)
         hewan1.suara();  // Output: Panda Merah mengeluarkan suara: 'Munch munch...'
