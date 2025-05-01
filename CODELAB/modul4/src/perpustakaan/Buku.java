@@ -1,7 +1,7 @@
 package perpustakaan;
 
 public abstract class Buku {
-    protected String judul;
+    protected String judul; //hnya pewarisan atau satu paket
     protected String penulis;
 
     public Buku(String judul, String penulis) {
