@@ -1,4 +1,3 @@
-package TUGAS;
 import java.util.Scanner;
 
 class Admin {

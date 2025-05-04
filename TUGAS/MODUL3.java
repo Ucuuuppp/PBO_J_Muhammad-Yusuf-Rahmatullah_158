@@ -1,5 +1,3 @@
-package TUGAS;
-
 import java.util.Scanner;
 
 // Kelas LoginSystem sebagai program utama
