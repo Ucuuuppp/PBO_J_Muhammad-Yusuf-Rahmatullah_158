@@ -8,9 +8,9 @@ public class ManajemenStok {
         // Tambahkan data awal
         try (Scanner scanner = new Scanner(System.in)) {
             // Tambahkan data awal
-            daftarBarang.add(new Barang("Pensil", 10));
-            daftarBarang.add(new Barang("Buku", 5));
-            daftarBarang.add(new Barang("Penghapus", 7));
+           // daftarBarang.add(new Barang("Pensil", 10));
+           // daftarBarang.add(new Barang("Buku", 5));
+           // daftarBarang.add(new Barang("Penghapus", 7));
             
             int pilihan = -1;
             
