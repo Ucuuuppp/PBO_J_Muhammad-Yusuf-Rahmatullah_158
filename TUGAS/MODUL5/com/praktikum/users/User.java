@@ -17,6 +17,6 @@
             return nim;
         }
         
-        public abstract boolean login(String input1, String input2);
+        public abstract User login(User user);
         public abstract void displayAppMenu(); // method untuk menampilkan menu spesifik peran
     }
