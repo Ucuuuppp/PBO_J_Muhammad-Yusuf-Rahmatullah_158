@@ -1,8 +1,8 @@
     package com.praktikum.users;
 
     public abstract class User {
-        private String nama;
-        private String nim;
+        private final String nama;
+        private final String nim;
 
         public User(String nama, String nim) {
             this.nama = nama;
