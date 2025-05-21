@@ -17,6 +17,6 @@
             return nim;
         }
         
-        public abstract User login(User user);
+        public abstract User login(User user);  // diubh
         public abstract void displayAppMenu(); // method untuk menampilkan menu spesifik peran
     }

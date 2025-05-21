@@ -82,7 +82,7 @@ public class Mahasiswa extends User implements MahasiswaActions {
     @Override
     public void viewReportedItems() {
         try {
-            if (LoginSystem.reportedItems.size() == 0) {
+            if (LoginSystem.reportedItems.isEmpty()) {
                 System.out.println("Belum ada laporan barang.");
             } else {
                 for (Item item : LoginSystem.reportedItems) {

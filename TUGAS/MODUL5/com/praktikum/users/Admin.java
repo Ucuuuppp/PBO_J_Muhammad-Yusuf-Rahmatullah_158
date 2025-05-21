@@ -79,6 +79,7 @@ public class Admin extends User implements AdminActions {
                     case 1 -> {
                         if (LoginSystem.reportedItems.isEmpty()) {
                             System.out.println("\nTidak ada barang\n");
+                            break;
                         }
                         for (Item item : LoginSystem.reportedItems) {
                             System.out.println("Nama Barang: " + item.getItemName());
