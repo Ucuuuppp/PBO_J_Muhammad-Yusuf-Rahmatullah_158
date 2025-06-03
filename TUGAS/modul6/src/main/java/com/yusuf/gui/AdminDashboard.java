@@ -50,6 +50,10 @@ public class AdminDashboard {
         itemNameCol.setCellValueFactory(new PropertyValueFactory<>("itemName"));
         itemNameCol.setPrefWidth(100);
 
+        TableColumn<Item, String> descriptionCol = new TableColumn<>("Deskripsi");
+        descriptionCol.setCellValueFactory(new PropertyValueFactory<>("description"));
+        descriptionCol.setPrefWidth(100);
+
         TableColumn<Item, String> itemLocationCol = new TableColumn<>("Lokasi");
         itemLocationCol.setCellValueFactory(new PropertyValueFactory<>("location"));
         itemLocationCol.setPrefWidth(100);
@@ -58,7 +62,7 @@ public class AdminDashboard {
         itemStatusCol.setCellValueFactory(new PropertyValueFactory<>("status"));
         itemStatusCol.setPrefWidth(100);
 
-        itemTableView.getColumns().addAll(itemNameCol, itemLocationCol, itemStatusCol);
+        itemTableView.getColumns().addAll(itemNameCol, descriptionCol, itemLocationCol, itemStatusCol);
         itemTableView.setItems(DataStore.reportedItemsData);
         VBox.setVgrow(itemTableView, Priority.ALWAYS);
 
@@ -110,11 +114,6 @@ public class AdminDashboard {
 
         Alert alert = new Alert(Alert.AlertType.WARNING);
 
-        if (itemTableView.getSelectionModel().getSelectedItem() == null) {
-            markClaimedButton.setDisable(true);
-        } else {
-            markClaimedButton.setDisable(false);
-        }
         markClaimedButton.setOnAction(e -> {
             Item selectedItem = itemTableView.getSelectionModel().getSelectedItem();
             if (selectedItem != null) {

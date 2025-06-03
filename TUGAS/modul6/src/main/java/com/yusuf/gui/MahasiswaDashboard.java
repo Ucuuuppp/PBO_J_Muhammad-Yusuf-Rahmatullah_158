@@ -70,10 +70,16 @@ public class MahasiswaDashboard {
         TableColumn<Item, String> nameColumn = new TableColumn<>("Nama");
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("itemName"));
         nameColumn.setPrefWidth(150);
+
+        TableColumn<Item, String> descriptionColumn = new TableColumn<>("Deskripsi");
+        descriptionColumn.setCellValueFactory(new PropertyValueFactory<>("description"));
+        descriptionColumn.setPrefWidth(150);
+
         TableColumn<Item, String> locationColumn = new TableColumn<>("Lokasi");
         locationColumn.setCellValueFactory(new PropertyValueFactory<>("location"));
         locationColumn.setPrefWidth(350);
-        itemTableView.getColumns().addAll(nameColumn, locationColumn);
+
+        itemTableView.getColumns().addAll(nameColumn, descriptionColumn, locationColumn);
         itemTableView.setItems(DataStore.reportedItemsData);
         itemTableView.setPlaceholder(new Label("Belum ada laporan"));
 
